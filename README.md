@@ -8,8 +8,14 @@ This project analyzes macroeconomic data spanning the past 7 years to explore re
 __Tool 1__: Data Loading and Preprocessing
 - Necessary libraries such as pandas, seaborn, and matplotlib are imported, and the Macroeconomic Data dataset (macro_data_25yrs.csv) is uploaded into df and copied as df1 for purposes of analysis. The first ten rows are displayed to inspect the variables. Null (NaN) values are replaced with the mean of the column values. In this case, SOFR was the only column with null values, so its 81 values were filled in with the column mean.
 
+<img src="assets/LoadingandPreprocessing1.jpg" width="350">
+<img src="assets/LoadingandPreprocessing2.jpg" width="350">
+
+
 __Tool 2__: Feature Engineering and Correlation Analysis
 Feature engineering was applied to enhance the predictive power and analytical depth of the macroeconomic dataset. New variables such as yield spread (10-year Treasury yield minus the Federal Funds Rate) and 30-day moving averages were created to capture trends, momentum, and variability in economic indicators over time. Correlation analysis was then conducted to identify relationships between variables, revealing strong connections such as the high correlation between long-term and short-term interest rates, as well as between M2 money supply and CPI. These engineered features and correlation insights provide a stronger foundation for modeling, enabling more accurate forecasts and a deeper understanding of macroeconomic dynamics.
+
+<img src="assets/CorrelationAnalysis1.jpg" width="350">
 
 
 __Tool 3__: Time Series Modeling
@@ -24,6 +30,9 @@ Using matplotlib, we find the Federal Funds Rate over the last 7 years. Our x- a
 - After 2022, rates were hiked to over 5% due to growing inflation from the amount of borrowing that occurred to keep the economy afloat during shutdowns.
 - From late 2024 to now, the rate has dropped to around 4.75% but the trajectory of the economy at the time is uncertain to lower the rate further.
 
+<img src="assets/TimeSeries1.jpg" width="350">
+
+
 Time Series 2:
 Switching now to pandas, we figure out the relationship between the Federal Funds Rate and the inflation rate percentage from 2018-2025. By utilizing pandas, it is easier to have all graphing details in one to two lines, versus matplotlib, where each line is an assigned plotted variable. From the graph, we can see:
 
@@ -34,11 +43,16 @@ Switching now to pandas, we figure out the relationship between the Federal Fund
 
 As you can see, there is likely a correlation between these two variables. When inflation rises, the federal funds rate increases to ease consumption. The same applies when inflation decreases.
 
+<img src="assets/TimeSeries2.jpg" width="350">
+
 Time Series 3:
 Lastly, the provided Seaborn pairplot visualizes the relationships between key economic indicators, including M2 Money Supply, 10-Year Treasury Yield, Federal Funds Rate, Consumer Price Index (CPI), Inflation Rate, and SOFR (Secured Overnight Financing Rate). The plot features a 6x6 grid where each cell represents a scatter plot or histogram, comparing one variable against another or itself. The diagonal cells display histograms of individual variables, while off-diagonal cells show scatter plots with data points, highlighting correlations and distributions. The plot uses a consistent blue color scheme and includes a height scaling factor of 1.5, enhancing the clarity of the data trends and patterns observed across these financial metrics as of the data's context.
 
 To go into a couple of the plots, let's see their correlation:
 - The scatter plot of M2 Money Supply versus 10-Year Treasury Yield shows a general upward trend, suggesting a positive correlation as money supply increases with higher yields.
 - The histogram of the Inflation Rate highlights a right-skewed distribution, indicating that lower inflation rates are more common in the dataset.
+
+<img src="assets/TimeSeries3.jpg" width="350">
+
 
 
