@@ -33,6 +33,7 @@ Using matplotlib, we find the Federal Funds Rate over the last 7 years. Our x- a
 
 
 Time Series 2:
+
 Switching now to pandas, we figure out the relationship between the Federal Funds Rate and the inflation rate percentage from 2018-2025. By utilizing pandas, it is easier to have all graphing details in one to two lines, versus matplotlib, where each line is an assigned plotted variable. From the graph, we can see:
 
 - Inflation and interest rates stayed close together before the 2020 pandemic.
@@ -45,6 +46,7 @@ As you can see, there is likely a correlation between these two variables. When 
 <img src="assets/TimeSeries2.jpg" width="700">
 
 Time Series 3:
+
 Lastly, the provided Seaborn pairplot visualizes the relationships between key economic indicators, including M2 Money Supply, 10-Year Treasury Yield, Federal Funds Rate, Consumer Price Index (CPI), Inflation Rate, and SOFR (Secured Overnight Financing Rate). The plot features a 6x6 grid where each cell represents a scatter plot or histogram, comparing one variable against another or itself. The diagonal cells display histograms of individual variables, while off-diagonal cells show scatter plots with data points, highlighting correlations and distributions. The plot uses a consistent blue color scheme and includes a height scaling factor of 1.5, enhancing the clarity of the data trends and patterns observed across these financial metrics as of the data's context.
 
 To go into a couple of the plots, let's see their correlation:
