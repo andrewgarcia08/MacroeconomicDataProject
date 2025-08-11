@@ -55,5 +55,7 @@ To go into a couple of the plots, let's see their correlation:
 
 <img src="assets/TimeSeries3.jpg" width="700">
 
+You can find more time series models and regression analyses in the Jupyter notebook...
+
 
 
